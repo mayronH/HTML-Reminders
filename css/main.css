@@ -1,0 +1,183 @@
+/* COLORS */
+
+:root {
+    --body: #e0e0e0;
+    --scrollbar-track: #efefef;
+    --dark-blue: #203d63;
+    --soft-blue: #375172;
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: var(--body);
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+
+    background-color: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+
+    background-color: var(--soft-blue);
+
+    border: 2px solid var(--scrollbar-track);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-blue);
+}
+
+p,
+li {
+    font-weight: 300;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--soft-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--dark-blue);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+ul {
+    list-style: square;
+}
+
+meter {
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+input {
+    background-color: #efefef;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    margin: 5px 0;
+}
+
+pre {
+    background-color: #efefef;
+
+    padding: 10px;
+    margin: 15px 0;
+}
+
+figcaption {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* BODY */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 750px;
+
+    margin: auto;
+    padding: 50px 15px;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin: 25px 0;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    margin: 15px 0;
+}
+
+.choice {
+    font-size: 18px;
+
+    background-color: #efefef;
+
+    padding: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    text-transform: lowercase;
+
+    background-color: #fff;
+
+    padding: 25px;
+}
