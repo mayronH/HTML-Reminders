@@ -125,6 +125,13 @@ figcaption {
   text-align: center;
 }
 
+small {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+
+  color: #464747;
+}
+
 /* BODY */
 
 .container {

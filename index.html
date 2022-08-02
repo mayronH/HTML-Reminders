@@ -152,6 +152,43 @@
       </section>
 
       <section class="row">
+        <h2 class="title">Auto Complete</h2>
+        <p>autocomplete attribute for phone assistance or autocomplete softwares</p>
+        <form>
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" autocomplete="given-name" />
+            <small>&lt;input type="text" autocomplete="given-name"&gt;</small>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" autocomplete="family-name" />
+            <small>&lt;input type="text" autocomplete="family-name"&gt;</small>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" autocomplete="email" />
+            <small>&lt;input type="email" autocomplete="email"&gt;</small>
+
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" name="phone" id="phone" autocomplete="mobile" />
+            <small>&lt;input type="tel" autocomplete="mobile"&gt;</small>
+          </fieldset>
+
+          <fieldset>
+            <legend>Password</legend>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" autocomplete="new-password" />
+            <small>&lt;input type="text" autocomplete="new-password"&gt;</small>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" />
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="row">
         <h2 class="title">Noopener</h2>
         <p>
           Links with target="_blank" opens the link in a new tab. Without rel="noopener" the new tab can access your
