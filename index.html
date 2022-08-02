@@ -1,201 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HTML Tips</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tips</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>HTML Tips and Best Practices</h1>
 
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
-    <body>
-        <main class="container">
-            <h1>HTML Tips and Best Practices</h1>
+      <section class="row">
+        <h2 class="title">Pre tag</h2>
+        <p>print preformatted text exactly like is written</p>
 
-            <section class="row">
-                <h2 class="title">Pre tag</h2>
-                <p>print preformatted text exactly like is written</p>
+        <pre>
+            Random
+                text
+            preformatted
+        </pre>
+      </section>
 
-                <pre>
-                    Random
-                        text
-                    preformatted
-                </pre>
-            </section>
+      <section class="row">
+        <h2 class="title">Code tag</h2>
+        <p>&lt;code&gt; code represent one line of code, multiples lines should be inside a &lt;pre&gt; tag</p>
 
-            <section class="row">
-                <h2 class="title">Code tag</h2>
-                <p>&lt;code&gt; code represent one line of code, multiples lines should be inside a &lt;pre&gt; tag</p>
+        <pre>
+            <code> 
+                code { 
+                    background-color: #efefef;
+                    padding:25px;
+                    margin: 15px 0; 
+                }
+            </code>
+        </pre>
+      </section>
 
-                <pre>
-                    <code> 
-                        code { 
-                            background-color: #efefef;
-                            padding:25px;
-                            margin: 15px 0; 
-                        }
-                    </code>
-                </pre>
-            </section>
+      <section class="row">
+        <h2 class="title">Use &lt;em&gt; and &lt;strong&gt;</h2>
+        <p>Never use &lt;b&gt; and &lt;i&gt;, substitute to &lt;strong&gt; and &lt;em&gt;</p>
+        <p><strong>Bold text</strong> and <em> emphasize text</em></p>
+      </section>
 
-            <section class="row">
-                <h2 class="title">Use &lt;em&gt; and &lt;strong&gt;</h2>
-                <p>Never use &lt;b&gt; and &lt;i&gt;, substitute to &lt;strong&gt; and &lt;em&gt;</p>
-                <p><strong>Bold text</strong> and <em> emphasize text</em></p>
-            </section>
+      <section class="row">
+        <h2 class="title">HTML Accordion</h2>
+        <p>&lt;details&gt; element to create the accordion and &lt;summary&gt; as the accordion header</p>
 
-            <section class="row">
-                <h2 class="title">HTML Accordion</h2>
-                <p>&lt;details&gt; element to create the accordion and &lt;summary&gt; as the accordion header</p>
+        <details>
+          <summary>Just an accordion with basic HTML</summary>
 
-                <details>
-                    <summary>Just an accordion with basic HTML</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, commodi! Repudiandae deleniti repellat ipsa
+            eum quo alias voluptas. Quisquam est iure praesentium totam enim alias voluptate cupiditate beatae optio
+            aspernatur!
+          </p>
+        </details>
+      </section>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, commodi! Repudiandae deleniti
-                        repellat ipsa eum quo alias voluptas. Quisquam est iure praesentium totam enim alias voluptate
-                        cupiditate beatae optio aspernatur!
-                    </p>
-                </details>
-            </section>
+      <section class="row">
+        <h2 class="title">Highlight Text</h2>
+        <p>&lt;mark&gt; to highlight the text</p>
 
-            <section class="row">
-                <h2 class="title">Highlight Text</h2>
-                <p>&lt;mark&gt; to highlight the text</p>
+        <p>Lorem ipsum, dolor sit <mark>amet</mark> consectetur adipisicing elit.</p>
+      </section>
 
-                <p>Lorem ipsum, dolor sit <mark>amet</mark> consectetur adipisicing elit.</p>
-            </section>
+      <section class="row">
+        <h2 class="title">Download</h2>
+        <p>download attribute in links</p>
+        <p>&lt;a href="path" download&gt;</p>
 
-            <section class="row">
-                <h2 class="title">Download</h2>
-                <p>download attribute in links</p>
-                <p>&lt;a href="path" download&gt;</p>
+        <a href="download" download>click here</a>
+      </section>
 
-                <a href="download" download>click here</a>
-            </section>
+      <section class="row">
+        <h2 class="title">Phone, SMS and e-mail links</h2>
+        <ul>
+          <li>Phone: href="tel:+phonenumber"</li>
+          <li>SMS: href="sms:+phonenumber?body=message"</li>
+          <li>E-mail: href="mailto:email@email.com?subject=subject&body=message"</li>
+        </ul>
+      </section>
 
-            <section class="row">
-                <h2 class="title">Phone, SMS and e-mail links</h2>
-                <ul>
-                    <li>Phone: href="tel:+phonenumber"</li>
-                    <li>SMS: href="sms:+phonenumber?body=message"</li>
-                    <li>E-mail: href="mailto:email@email.com?subject=subject&body=message"</li>
-                </ul>
-            </section>
+      <section class="row">
+        <h2 class="title">Ordered List</h2>
+        <p>start attribute start="number"</p>
+        <ol start="5">
+          <li>Anakin Skywalker</li>
+          <li>Luke Skywalker</li>
+          <li>Darth Vader</li>
+          <li>Obi-Wan Kenobi</li>
+        </ol>
+      </section>
 
-            <section class="row">
-                <h2 class="title">Ordered List</h2>
-                <p>start attribute start="number"</p>
-                <ol start="5">
-                    <li>Anakin Skywalker</li>
-                    <li>Luke Skywalker</li>
-                    <li>Darth Vader</li>
-                    <li>Obi-Wan Kenobi</li>
-                </ol>
-            </section>
+      <section class="row">
+        <h2 class="title">File Upload Type</h2>
+        <p>accept attribute in input type files</p>
+        <p>&lt;input type="file" accept="image/*"&gt; Only image types</p>
 
-            <section class="row">
-                <h2 class="title">File Upload Type</h2>
-                <p>accept attribute in input type files</p>
-                <p>&lt;input type="file" accept="image/*"&gt; Only image types</p>
+        <input type="file" name="image" accept="image/*" />
+      </section>
 
-                <input type="file" name="image" accept="image/*">
-            </section>
+      <section class="row">
+        <h2 class="title">Meter Element</h2>
+        <p>No CSS or Javascript needed</p>
+        <div class="row">
+          <label for="meter1">Low</label>
+          <meter id="meter1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
 
-            <section class="row">
-                <h2 class="title">Meter Element</h2>
-                <p>No CSS or Javascript needed</p>
-                <div class="row">
-                    <label for="meter1">Low</label>
-                    <meter id="meter1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+          <label for="meter2">Medium</label>
+          <meter id="meter2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
 
-                    <label for="meter2">Medium</label>
-                    <meter id="meter2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+          <label for="meter3">High</label>
+          <meter id="meter3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+        </div>
+      </section>
 
-                    <label for="meter3">High</label>
-                    <meter id="meter3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
-                </div>
-            </section>
+      <section class="row">
+        <h2 class="title">Fieldset</h2>
+        <p>group inputs and labels with fieldset</p>
+        <form>
+          <fieldset>
+            <legend>Use &lt;legend&gt; to display a legend to fieldset</legend>
+            <label for="input1">Text Input</label>
+            <input type="text" name="input1" id="input1" />
 
-            <section class="row">
-                <h2 class="title">Fieldset</h2>
-                <p>group inputs and labels with fieldset</p>
-                <form>
-                    <fieldset>
-                        <legend>Use &lt;legend&gt; to display a legend to fieldset</legend>
-                        <label for="input1">Text Input</label>
-                        <input type="text" name="input1" id="input1" />
+            <label for="input2">Password Input</label>
+            <input type="password" name="input2" id="input2" />
+          </fieldset>
+        </form>
+      </section>
 
-                        <label for="input2">Password Input</label>
-                        <input type="password" name="input2" id="input2" />
-                    </fieldset>
-                </form>
-            </section>
+      <section class="row">
+        <h2 class="title">HTML Slider</h2>
+        <p>&lt;input type="range"&gt;</p>
 
-            <section class="row">
-                <h2 class="title">HTML Slider</h2>
-                <p>&lt;input type="range"&gt;</p>
+        <label for="slider">Number</label>
+        <input type="range" name="slider" id="slider" min="0" max="100" />
 
-                <label for="slider">Number</label>
-                <input type="range" name="slider" id="slider" min="0" max="100" />
+        <p>Your choice: <span class="choice"></span></p>
+      </section>
 
-                <p>Your choice: <span class="choice"></span></p>
-            </section>
+      <section class="row">
+        <h2 class="title">input search</h2>
+        <p>The input type "search" have a clean button by default</p>
 
-            <section class="row">
-                <h2 class="title">input search</h2>
-                <p>The input type "search" have a clean button by default</p>
+        <input type="search" name="search" id="search" placeholder="type anything" />
+      </section>
 
-                <input type="search" name="search" id="search" placeholder="type anything" />
-            </section>
+      <section class="row">
+        <h2 class="title">Noopener</h2>
+        <p>
+          Links with target="_blank" opens the link in a new tab. Without rel="noopener" the new tab can access your
+          page via windows object
+        </p>
 
-            <section class="row">
-                <h2 class="title">Noopener</h2>
-                <p>
-                    Links with target="_blank" opens the link in a new tab. Without rel="noopener" the new tab can
-                    access your page via windows object
-                </p>
+        <a href="https://github.com/mayronH" target="_blank" rel="noopener">just an example</a>
+      </section>
 
-                <a href="https://github.com/mayronH" target="_blank" rel="noopener">just an example</a>
-            </section>
+      <section class="row">
+        <h2 class="title">Lazy Loading</h2>
+        <p>loading="lazy", load the image only when the user scrolls to them.</p>
+        <div class="images">
+          <img src="https://picsum.photos/600/300?random=1" loading="lazy" alt="Random image" />
+          <img src="https://picsum.photos/600/300?random=2" loading="lazy" alt="Random image" />
+          <img src="https://picsum.photos/600/300?random=3" loading="lazy" alt="Random image" />
+        </div>
+      </section>
 
-            <section class="row">
-                <h2 class="title">Lazy Loading</h2>
-                <p>loading="lazy", load the image only when the user scrolls to them.</p>
-                <div class="images">
-                    <img src="https://picsum.photos/600/300?random=1" loading="lazy" alt="Random image" />
-                    <img src="https://picsum.photos/600/300?random=2" loading="lazy" alt="Random image" />
-                    <img src="https://picsum.photos/600/300?random=3" loading="lazy" alt="Random image" />
-                </div>
-            </section>
+      <section class="row">
+        <h2 class="title">Image Caption</h2>
+        <p>Use &lt;figure&gt; elemento to wrap the image and &lt;figcaption&gt; as caption</p>
 
-            <section class="row">
-                <h2 class="title">Image Caption</h2>
-                <p>Use &lt;figure&gt; elemento to wrap the image and &lt;figcaption&gt; as caption</p>
+        <div class="images">
+          <figure>
+            <img src="https://picsum.photos/seed/skywalker/400/300" loading="lazy" alt="Foggy forest" />
+            <figcaption>Foggy forest</figcaption>
+          </figure>
+        </div>
+      </section>
 
-                <div class="images">
-                    <figure>
-                        <img src="https://picsum.photos/seed/skywalker/400/300" loading="lazy" alt="Foggy forest" />
-                        <figcaption>Foggy forest</figcaption>
-                    </figure>
-                </div>
-            </section>
+      <section class="row">
+        <h2 class="title">HTML Tag as plain text</h2>
+        <p>Use "& lt ;" and "& gt ;" with no space</p>
+        <p>&lt;p&gt;Use "& lt ;" and "& gt " with no space&lt;/p&gt;</p>
+      </section>
+    </main>
 
-            <section class="row">
-                <h2 class="title">HTML Tag as plain text</h2>
-                <p>Use "& lt ;" and "& gt ;" with no space</p>
-                <p>&lt;p&gt;Use "& lt ;" and "& gt " with no space&lt;/p&gt;</p>
-            </section>
-        </main>
+    <footer>
+      <small>Made with ❤️ by <a href="https://github.com/mayronH">mayronH</a></small>
+    </footer>
 
-        <footer>
-            <small>Made with ❤️ by <a href="https://github.com/mayronH">mayronH</a></small>
-        </footer>
-
-        <script src="js/main.js"></script>
-    </body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
